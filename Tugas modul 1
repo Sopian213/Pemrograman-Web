@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body style="background-color: #f2f2f2; margin: 20px; font-family: Arial, sans-serif;">
+
+  <!-- Logo kampus -->
+  <img src="gambar.jpg" alt="Logo Kampus STITEK" width="300" style="display: block; margin-bottom: 20px;">
+
+  <!-- Heading utama -->
+  <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+  <!-- Formulir Pendaftaran -->
+  <form action="/submit" method="post">
+
+    <!-- Data Pribadi -->
+    <fieldset style="margin-bottom: 20px;">
+      <legend>Data Pribadi</legend>
+
+      <!-- Nama -->
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama" placeholder="Contoh: Ahmad Rafi" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Contoh: email@example.com" required><br><br>
+
+      <!-- Jenis Kelamin -->
+      <label>Jenis Kelamin:</label><br>
+      <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+      <label for="pria">Pria</label><br>
+      <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+      <label for="wanita">Wanita</label><br><br>
+    </fieldset>
+
+    <!-- Hobi -->
+    <fieldset style="margin-bottom: 20px;">
+      <legend>Hobi</legend>
+      <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+      <label for="membaca">Membaca</label><br>
+      <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+      <label for="olahraga">Olahraga</label><br>
+      <input type="checkbox" id="musik" name="hobi" value="Musik">
+      <label for="musik">Musik</label><br>
+        <input type="checkbox" id="memasak" name="hobi" value="Memasak">
+      <label for="memasak">Memasak</label><br><br>
+    </fieldset>
+
+    <!-- Jurusan -->
+    <fieldset style="margin-bottom: 20px;">
+      <legend>Jurusan Pilihan</legend>
+      <label for="jurusan">Pilih Jurusan:</label><br>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">-- Pilih Jurusan --</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Teknik Elektro">Teknik Elektro</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Bisnis Digital">Bisnis Digital</option>
+      </select><br><br>
+    </fieldset>
+
+    <!-- Alamat -->
+    <fieldset style="margin-bottom: 20px;">
+      <legend>Alamat</legend>
+      <label for="alamat">Alamat Lengkap:</label><br>
+      <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Contoh: Jl. Mawar No. 1, Bontang"></textarea><br><br>
+    </fieldset>
+
+    <!-- Tombol Submit -->
+    <input type="submit" value="Daftar" style="padding: 8px 16px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+
+  </form>
+
+  <!-- Link ke halaman informasi kampus -->
+  <p style="margin-top: 30px;">
+    <a href="https://www.stitek.ac.id" title="Kunjungi situs resmi STITEK" style="color: blue;">Informasi lebih lanjut tentang kampus</a>
+  </p>
+
+</body>
+</html>
