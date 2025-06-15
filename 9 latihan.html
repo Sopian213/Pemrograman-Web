@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2196F3; 
+      font-family: sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px; 
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: #e74c3c; 
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr; 
+      }
+
+      .grid-item {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">Teks 1</div>
+    <div class="grid-item">Teks 2</div>
+    <div class="grid-item">Teks 3</div>
+  </div>
+
+</body>
+</html>
